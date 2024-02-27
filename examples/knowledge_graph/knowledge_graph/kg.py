@@ -5,7 +5,6 @@ from llama_index.core import SimpleDirectoryReader, KnowledgeGraphIndex
 from llama_index.core.graph_stores import SimpleGraphStore
 from llama_index.llms.openai import OpenAI
 from llama_index.core import Settings
-from IPython.display import Markdown, display
 from llama_index.core import StorageContext
 from llama_index.readers.web import SimpleWebPageReader
 
