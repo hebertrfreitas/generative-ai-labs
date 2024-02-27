@@ -1,0 +1,24 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [{
+        "name": "Python: Streamlit",
+        "type": "debugpy",
+        "request": "launch",
+        "module": "streamlit",
+        "env": {
+            //"STREAMLIT_APP": "app.py",
+            //"STREAMLIT_ENV": "development",
+            //"AWS_PROFILE": "mega_root",
+            //"PYTHONPATH": "${workspaceRoot}/streamlit_app",
+        },
+        "args": [
+            "run",
+            "${workspaceFolder}/streamlit_app/app.py"
+        ],
+        "jinja": true
+    }
+   ]
+}

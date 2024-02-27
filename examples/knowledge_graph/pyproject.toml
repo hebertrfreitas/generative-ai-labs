@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "knowledge-graph"
+version = "0.1.0"
+description = ""
+authors = ["Hebert Freitas <hebertrfreitas@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+llama-index = "^0.10.13.post1"
+ipython = "^8.22.1"
+llama-index-readers-web = "^0.1.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
