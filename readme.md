@@ -7,6 +7,10 @@ Normalmente, eu penso melhor escrevendo textos e códigos de exemplo, então se 
 
 Apesar de ser escrito primariamente para o meu próprio estudo é possível que ele seja útil para mais alguém que esteja interessado no mesmo tema.
 
+Conforme vou liberando novos exemplos e estudando novos temas irei disponibilizar conteúdos 
+
+
+
 
 ----
 
@@ -30,5 +34,7 @@ Para desenvolvedores, é possível iteragir programaticamente através da [api d
 
 --------
 
-## Primeiro projeto
+## Índice
+
+
 
