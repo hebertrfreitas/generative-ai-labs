@@ -1,0 +1,71 @@
+Log file created at: 2024/03/25 00:17:48
+Running on machine: 22c997c4faec
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20240325 00:17:48.474011     1 GraphDaemon.cpp:122] Starting Graph HTTP Service
+I20240325 00:17:53.492785     6 WebService.cpp:124] Web service started on HTTP[19669]
+I20240325 00:17:53.495376     1 GraphDaemon.cpp:136] Number of networking IO threads: 5
+I20240325 00:17:53.496074     1 GraphDaemon.cpp:145] Number of worker threads: 5
+I20240325 00:17:53.504878     1 MetaClient.cpp:80] Create meta client to "metad0":9559
+I20240325 00:17:53.506078     1 MetaClient.cpp:81] root path: /usr/local/nebula, data path size: 0
+I20240325 00:17:53.508967    30 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.27.0.3":9559
+I20240325 00:17:54.521502    30 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.27.0.3":9559
+I20240325 00:17:54.545064    31 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.27.0.3":9559
+I20240325 00:17:54.550429    32 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.27.0.3":9559
+I20240325 00:17:54.553732    33 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.27.0.3":9559
+I20240325 00:17:59.567451    34 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.27.0.3":9559
+I20240325 00:17:59.587169     1 MetaClient.cpp:3269] Load leader ok
+I20240325 00:17:59.596589     1 MetaClient.cpp:162] Register time task for heartbeat!
+I20240325 00:17:59.614931     1 GraphSessionManager.cpp:337] Total of 0 sessions are loaded
+E20240325 00:17:59.617137     1 MemoryUtils.cpp:167] Total memory less than untracked 50 Mib, MemoryTracker limit is not set properly,  Current memory stats:MemoryStats: 8589934592.000GiB/33.000MiB
+I20240325 00:17:59.629971     1 MemoryUtils.cpp:171] MemoryTracker set static ratio: 0.8
+I20240325 00:17:59.636037     1 Snowflake.cpp:17] WorkerId init success: 0
+I20240325 00:17:59.636874    38 GraphServer.cpp:63] Starting nebula-graphd on graphd:9669
+I20240325 00:18:00.623450    22 GraphService.cpp:77] Authenticating user root from 172.27.0.6:47840
+I20240325 00:18:00.646021    19 GraphService.cpp:77] Authenticating user root from 172.27.0.6:47850
+I20240325 00:18:01.673549    18 GraphService.cpp:77] Authenticating user root from 172.27.0.6:47874
+I20240325 00:18:01.690217    22 GraphService.cpp:77] Authenticating user root from 172.27.0.6:47884
+I20240325 00:18:01.704099    21 GraphService.cpp:77] Authenticating user root from 172.27.0.6:47900
+I20240325 00:18:10.103515    35 MetaClient.cpp:3263] Load leader of "storaged0":9779 in 0 space
+I20240325 00:18:10.104457    35 MetaClient.cpp:3269] Load leader ok
+I20240325 00:18:21.740229    18 GraphService.cpp:77] Authenticating user root from 172.27.0.6:47228
+I20240325 00:18:21.751508    19 SwitchSpaceExecutor.cpp:45] Graph switched to `tomb_raider', space id: 1
+I20240325 00:18:21.779505    19 GraphService.cpp:77] Authenticating user root from 172.27.0.6:47248
+I20240325 00:18:21.783763    21 SwitchSpaceExecutor.cpp:45] Graph switched to `tomb_raider', space id: 1
+I20240325 00:18:21.798456    21 GraphService.cpp:77] Authenticating user root from 172.27.0.6:47262
+I20240325 00:18:21.800968    19 SwitchSpaceExecutor.cpp:45] Graph switched to `tomb_raider', space id: 1
+I20240325 00:18:30.151554    35 MetaClient.cpp:3263] Load leader of "storaged0":9779 in 0 space
+I20240325 00:18:30.152714    35 MetaClient.cpp:3269] Load leader ok
+I20240325 00:18:40.185819    35 MetaClient.cpp:3263] Load leader of "storaged0":9779 in 1 space
+I20240325 00:18:40.187000    35 MetaClient.cpp:3269] Load leader ok
+I20240325 00:36:12.471949    18 GraphService.cpp:77] Authenticating user root from 172.27.0.1:41286
+I20240325 00:36:12.482220    18 SwitchSpaceExecutor.cpp:45] Graph switched to `tomb_raider', space id: 1
+I20240325 00:36:13.329577    33 ThriftClientManager-inl.h:67] resolve "storaged0":9779 as "172.27.0.4":9779
+I20240325 00:36:13.347785    34 ThriftClientManager-inl.h:67] resolve "storaged0":9779 as "172.27.0.4":9779
+I20240325 00:36:18.359934    30 ThriftClientManager-inl.h:67] resolve "storaged0":9779 as "172.27.0.4":9779
+I20240325 00:36:18.380739    31 ThriftClientManager-inl.h:67] resolve "storaged0":9779 as "172.27.0.4":9779
+I20240325 00:36:18.386543    32 ThriftClientManager-inl.h:67] resolve "storaged0":9779 as "172.27.0.4":9779
+I20240325 00:43:37.752816    21 FunctionUdfManager.cpp:93] Load UDF so library: /home/nebula/dev/nebula/udf/
+E20240325 00:43:37.754973    21 FunctionUdfManager.cpp:41] UDF Folder doesn't Exist!
+E20240325 00:43:37.760797    21 LabelIndexSeek.cpp:56] SemanticError: No valid index for label `relationship'.
+I20240325 00:44:22.752730    20 GraphService.cpp:77] Authenticating user root from 172.27.0.1:37068
+I20240325 00:44:22.766073    22 SwitchSpaceExecutor.cpp:45] Graph switched to `tomb_raider', space id: 1
+E20240325 00:44:22.786998    21 LabelIndexSeek.cpp:56] SemanticError: No valid index for label `relationship'.
+I20240325 00:48:37.751761   377 FunctionUdfManager.cpp:93] Load UDF so library: /home/nebula/dev/nebula/udf/
+E20240325 00:48:37.754860   377 FunctionUdfManager.cpp:41] UDF Folder doesn't Exist!
+I20240325 00:52:49.154366    18 GraphService.cpp:77] Authenticating user root from 172.27.0.1:41782
+I20240325 00:52:49.166632    22 SwitchSpaceExecutor.cpp:45] Graph switched to `tomb_raider', space id: 1
+E20240325 00:52:49.181656    18 LabelIndexSeek.cpp:56] SemanticError: No valid index for label `relationship'.
+I20240325 00:53:12.280382    20 GraphService.cpp:77] Authenticating user root from 172.27.0.1:49804
+I20240325 00:53:12.290663    19 SwitchSpaceExecutor.cpp:45] Graph switched to `tomb_raider', space id: 1
+E20240325 00:53:12.304390    18 LabelIndexSeek.cpp:56] SemanticError: No valid index for label `relationship'.
+I20240325 00:53:37.750756   377 FunctionUdfManager.cpp:93] Load UDF so library: /home/nebula/dev/nebula/udf/
+E20240325 00:53:37.753618   377 FunctionUdfManager.cpp:41] UDF Folder doesn't Exist!
+I20240325 00:55:54.311888    21 GraphService.cpp:77] Authenticating user root from 172.27.0.1:54548
+I20240325 00:55:54.323701    20 SwitchSpaceExecutor.cpp:45] Graph switched to `tomb_raider', space id: 1
+E20240325 00:55:54.337322    21 LabelIndexSeek.cpp:56] SemanticError: No valid index for label `relationship'.
+I20240325 00:58:37.747928   377 FunctionUdfManager.cpp:93] Load UDF so library: /home/nebula/dev/nebula/udf/
+E20240325 00:58:37.751511   377 FunctionUdfManager.cpp:41] UDF Folder doesn't Exist!
+I20240325 00:59:59.832729    18 GraphService.cpp:77] Authenticating user root from 172.27.0.1:56142
+I20240325 00:59:59.844923    19 SwitchSpaceExecutor.cpp:45] Graph switched to `tomb_raider', space id: 1
+E20240325 00:59:59.855422    18 LabelIndexSeek.cpp:56] SemanticError: No valid index for label `relationship'.

@@ -1,0 +1,174 @@
+Log file created at: 2024/03/25 00:17:48
+Running on machine: a57eded0c662
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20240325 00:17:48.251127     1 StorageDaemon.cpp:132] localhost = "storaged0":9779
+I20240325 00:17:48.254459     1 StorageDaemon.cpp:147] data path= /data/storage
+I20240325 00:17:48.262012     1 MetaClient.cpp:80] Create meta client to "metad0":9559
+I20240325 00:17:48.262666     1 MetaClient.cpp:81] root path: /usr/local/nebula, data path size: 1
+W20240325 00:17:48.263422     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20240325 00:17:48.268777    47 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.27.0.3":9559
+I20240325 00:17:49.274245    47 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.27.0.3":9559
+I20240325 00:17:50.280443    47 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.27.0.3":9559
+I20240325 00:17:51.293454    47 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.27.0.3":9559
+E20240325 00:17:51.296819    47 MetaClient.cpp:772] Send request to "metad0":9559, exceed retry limit
+E20240325 00:17:51.306982    47 MetaClient.cpp:773] RpcResponse exception: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connection refused): Connection refused
+E20240325 00:17:51.310842     1 MetaClient.cpp:112] Heartbeat failed, status:RPC failure in MetaClient: apache::thrift::transport::TTransportException: Dropping unsent request. Connection closed after: apache::thrift::transport::TTransportException: AsyncSocketException: connect failed, type = Socket not open, errno = 111 (Connect
+I20240325 00:17:51.313800     1 MetaClient.cpp:137] Waiting for the metad to be ready!
+W20240325 00:18:01.318017     1 FileBasedClusterIdMan.cpp:43] Open file failed, error No such file or directory
+I20240325 00:18:01.328711    53 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.27.0.3":9559
+I20240325 00:18:01.341480    53 MetaClient.cpp:2672] Persist the cluster Id from metad 4212006426403204259
+I20240325 00:18:01.342825    53 FileBasedClusterIdMan.cpp:21] Remove the existed file cluster.id
+I20240325 00:18:01.344480    53 FileBasedClusterIdMan.cpp:34] Persist clusterId 4212006426403204259 succeeded!
+I20240325 00:18:01.347167    54 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.27.0.3":9559
+I20240325 00:18:06.362095    55 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.27.0.3":9559
+I20240325 00:18:06.376760    56 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.27.0.3":9559
+I20240325 00:18:06.384680    57 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.27.0.3":9559
+I20240325 00:18:11.394973    58 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.27.0.3":9559
+I20240325 00:18:11.411183    59 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.27.0.3":9559
+I20240325 00:18:11.418591    60 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.27.0.3":9559
+I20240325 00:18:16.435528    61 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.27.0.3":9559
+I20240325 00:18:16.445156    62 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.27.0.3":9559
+I20240325 00:18:16.449519    63 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.27.0.3":9559
+I20240325 00:18:16.454591    64 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.27.0.3":9559
+I20240325 00:18:21.463138    65 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.27.0.3":9559
+I20240325 00:18:21.474207    66 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.27.0.3":9559
+I20240325 00:18:26.480224    67 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.27.0.3":9559
+I20240325 00:18:26.490124     1 MetaClient.cpp:3263] Load leader of "storaged0":9779 in 0 space
+I20240325 00:18:26.493250     1 MetaClient.cpp:3269] Load leader ok
+I20240325 00:18:26.498450    47 ThriftClientManager-inl.h:67] resolve "metad0":9559 as "172.27.0.3":9559
+I20240325 00:18:26.507272     1 MetaClient.cpp:162] Register time task for heartbeat!
+I20240325 00:18:26.510301     1 StorageServer.cpp:250] Init schema manager
+I20240325 00:18:26.511694     1 StorageServer.cpp:253] Init index manager
+I20240325 00:18:26.512820     1 StorageServer.cpp:256] Init kvstore
+I20240325 00:18:26.513759     1 NebulaStore.cpp:48] Start the raft service...
+I20240325 00:18:26.516047     1 NebulaSnapshotManager.cpp:25] Send snapshot is rate limited to 10485760 for each part by default
+I20240325 00:18:26.530287     1 RaftexService.cpp:46] Start raft service on 9780
+I20240325 00:18:26.532625     1 NebulaStore.cpp:82] Scan the local path, and init the spaces_
+E20240325 00:18:26.534585     1 FileUtils.cpp:377] Failed to read the directory "/data/storage/nebula" (2): No such file or directory
+I20240325 00:18:26.536978     1 NebulaStore.cpp:292] Init data from partManager for "storaged0":9779
+I20240325 00:18:26.537992     1 NebulaStore.cpp:417] Create data space 1
+I20240325 00:18:26.550637    82 RocksEngineConfig.cpp:371] Emplace rocksdb option max_bytes_for_level_base=268435456
+I20240325 00:18:26.551474    82 RocksEngineConfig.cpp:371] Emplace rocksdb option max_write_buffer_number=4
+I20240325 00:18:26.552356    82 RocksEngineConfig.cpp:371] Emplace rocksdb option write_buffer_size=67108864
+I20240325 00:18:26.553822    82 RocksEngineConfig.cpp:371] Emplace rocksdb option block_size=8192
+I20240325 00:18:26.595605    82 RocksEngine.cpp:107] open rocksdb on /data/storage/nebula/1/data
+I20240325 00:18:26.600067     1 NebulaStore.cpp:480] Space 1, part 1 has been added, asLearner 0
+I20240325 00:18:26.602402     1 NebulaStore.cpp:480] Space 1, part 2 has been added, asLearner 0
+I20240325 00:18:26.604773     1 NebulaStore.cpp:480] Space 1, part 3 has been added, asLearner 0
+I20240325 00:18:26.607254     1 NebulaStore.cpp:480] Space 1, part 4 has been added, asLearner 0
+I20240325 00:18:26.610096     1 NebulaStore.cpp:480] Space 1, part 5 has been added, asLearner 0
+I20240325 00:18:26.612880     1 NebulaStore.cpp:480] Space 1, part 6 has been added, asLearner 0
+I20240325 00:18:26.615605     1 NebulaStore.cpp:480] Space 1, part 7 has been added, asLearner 0
+I20240325 00:18:26.618335     1 NebulaStore.cpp:480] Space 1, part 8 has been added, asLearner 0
+I20240325 00:18:26.620925     1 NebulaStore.cpp:480] Space 1, part 9 has been added, asLearner 0
+I20240325 00:18:26.623714     1 NebulaStore.cpp:480] Space 1, part 10 has been added, asLearner 0
+I20240325 00:18:26.626538     1 NebulaStore.cpp:480] Space 1, part 11 has been added, asLearner 0
+I20240325 00:18:26.629221     1 NebulaStore.cpp:480] Space 1, part 12 has been added, asLearner 0
+I20240325 00:18:26.631994     1 NebulaStore.cpp:480] Space 1, part 13 has been added, asLearner 0
+I20240325 00:18:26.634673     1 NebulaStore.cpp:480] Space 1, part 14 has been added, asLearner 0
+I20240325 00:18:26.637447     1 NebulaStore.cpp:480] Space 1, part 15 has been added, asLearner 0
+I20240325 00:18:26.640412     1 NebulaStore.cpp:480] Space 1, part 16 has been added, asLearner 0
+I20240325 00:18:26.643496     1 NebulaStore.cpp:480] Space 1, part 17 has been added, asLearner 0
+I20240325 00:18:26.647055     1 NebulaStore.cpp:480] Space 1, part 18 has been added, asLearner 0
+I20240325 00:18:26.651250     1 NebulaStore.cpp:480] Space 1, part 19 has been added, asLearner 0
+I20240325 00:18:26.655221     1 NebulaStore.cpp:480] Space 1, part 20 has been added, asLearner 0
+I20240325 00:18:26.658619     1 NebulaStore.cpp:480] Space 1, part 21 has been added, asLearner 0
+I20240325 00:18:26.661396     1 NebulaStore.cpp:480] Space 1, part 22 has been added, asLearner 0
+I20240325 00:18:26.664173     1 NebulaStore.cpp:480] Space 1, part 23 has been added, asLearner 0
+I20240325 00:18:26.666919     1 NebulaStore.cpp:480] Space 1, part 24 has been added, asLearner 0
+I20240325 00:18:26.669726     1 NebulaStore.cpp:480] Space 1, part 25 has been added, asLearner 0
+I20240325 00:18:26.672502     1 NebulaStore.cpp:480] Space 1, part 26 has been added, asLearner 0
+I20240325 00:18:26.675513     1 NebulaStore.cpp:480] Space 1, part 27 has been added, asLearner 0
+I20240325 00:18:26.678195     1 NebulaStore.cpp:480] Space 1, part 28 has been added, asLearner 0
+I20240325 00:18:26.681087     1 NebulaStore.cpp:480] Space 1, part 29 has been added, asLearner 0
+I20240325 00:18:26.683912     1 NebulaStore.cpp:480] Space 1, part 30 has been added, asLearner 0
+I20240325 00:18:26.686650     1 NebulaStore.cpp:480] Space 1, part 31 has been added, asLearner 0
+I20240325 00:18:26.689424     1 NebulaStore.cpp:480] Space 1, part 32 has been added, asLearner 0
+I20240325 00:18:26.692051     1 NebulaStore.cpp:480] Space 1, part 33 has been added, asLearner 0
+I20240325 00:18:26.694717     1 NebulaStore.cpp:480] Space 1, part 34 has been added, asLearner 0
+I20240325 00:18:26.697346     1 NebulaStore.cpp:480] Space 1, part 35 has been added, asLearner 0
+I20240325 00:18:26.700022     1 NebulaStore.cpp:480] Space 1, part 36 has been added, asLearner 0
+I20240325 00:18:26.702790     1 NebulaStore.cpp:480] Space 1, part 37 has been added, asLearner 0
+I20240325 00:18:26.705458     1 NebulaStore.cpp:480] Space 1, part 38 has been added, asLearner 0
+I20240325 00:18:26.708097     1 NebulaStore.cpp:480] Space 1, part 39 has been added, asLearner 0
+I20240325 00:18:26.710705     1 NebulaStore.cpp:480] Space 1, part 40 has been added, asLearner 0
+I20240325 00:18:26.713413     1 NebulaStore.cpp:480] Space 1, part 41 has been added, asLearner 0
+I20240325 00:18:26.716321     1 NebulaStore.cpp:480] Space 1, part 42 has been added, asLearner 0
+I20240325 00:18:26.719074     1 NebulaStore.cpp:480] Space 1, part 43 has been added, asLearner 0
+I20240325 00:18:26.721928     1 NebulaStore.cpp:480] Space 1, part 44 has been added, asLearner 0
+I20240325 00:18:26.724725     1 NebulaStore.cpp:480] Space 1, part 45 has been added, asLearner 0
+I20240325 00:18:26.727650     1 NebulaStore.cpp:480] Space 1, part 46 has been added, asLearner 0
+I20240325 00:18:26.730788     1 NebulaStore.cpp:480] Space 1, part 47 has been added, asLearner 0
+I20240325 00:18:26.733458     1 NebulaStore.cpp:480] Space 1, part 48 has been added, asLearner 0
+I20240325 00:18:26.736207     1 NebulaStore.cpp:480] Space 1, part 49 has been added, asLearner 0
+I20240325 00:18:26.744244     1 NebulaStore.cpp:480] Space 1, part 50 has been added, asLearner 0
+I20240325 00:18:26.747663     1 NebulaStore.cpp:480] Space 1, part 51 has been added, asLearner 0
+I20240325 00:18:26.750648     1 NebulaStore.cpp:480] Space 1, part 52 has been added, asLearner 0
+I20240325 00:18:26.753314     1 NebulaStore.cpp:480] Space 1, part 53 has been added, asLearner 0
+I20240325 00:18:26.755903     1 NebulaStore.cpp:480] Space 1, part 54 has been added, asLearner 0
+I20240325 00:18:26.758677     1 NebulaStore.cpp:480] Space 1, part 55 has been added, asLearner 0
+I20240325 00:18:26.761371     1 NebulaStore.cpp:480] Space 1, part 56 has been added, asLearner 0
+I20240325 00:18:26.764031     1 NebulaStore.cpp:480] Space 1, part 57 has been added, asLearner 0
+I20240325 00:18:26.766662     1 NebulaStore.cpp:480] Space 1, part 58 has been added, asLearner 0
+I20240325 00:18:26.769333     1 NebulaStore.cpp:480] Space 1, part 59 has been added, asLearner 0
+I20240325 00:18:26.772111     1 NebulaStore.cpp:480] Space 1, part 60 has been added, asLearner 0
+I20240325 00:18:26.774909     1 NebulaStore.cpp:480] Space 1, part 61 has been added, asLearner 0
+I20240325 00:18:26.777750     1 NebulaStore.cpp:480] Space 1, part 62 has been added, asLearner 0
+I20240325 00:18:26.780396     1 NebulaStore.cpp:480] Space 1, part 63 has been added, asLearner 0
+I20240325 00:18:26.783075     1 NebulaStore.cpp:480] Space 1, part 64 has been added, asLearner 0
+I20240325 00:18:26.785854     1 NebulaStore.cpp:480] Space 1, part 65 has been added, asLearner 0
+I20240325 00:18:26.788410     1 NebulaStore.cpp:480] Space 1, part 66 has been added, asLearner 0
+I20240325 00:18:26.790985     1 NebulaStore.cpp:480] Space 1, part 67 has been added, asLearner 0
+I20240325 00:18:26.793903     1 NebulaStore.cpp:480] Space 1, part 68 has been added, asLearner 0
+I20240325 00:18:26.796834     1 NebulaStore.cpp:480] Space 1, part 69 has been added, asLearner 0
+I20240325 00:18:26.799639     1 NebulaStore.cpp:480] Space 1, part 70 has been added, asLearner 0
+I20240325 00:18:26.805831     1 NebulaStore.cpp:480] Space 1, part 71 has been added, asLearner 0
+I20240325 00:18:26.808655     1 NebulaStore.cpp:480] Space 1, part 72 has been added, asLearner 0
+I20240325 00:18:26.811450     1 NebulaStore.cpp:480] Space 1, part 73 has been added, asLearner 0
+I20240325 00:18:26.814199     1 NebulaStore.cpp:480] Space 1, part 74 has been added, asLearner 0
+I20240325 00:18:26.816915     1 NebulaStore.cpp:480] Space 1, part 75 has been added, asLearner 0
+I20240325 00:18:26.819658     1 NebulaStore.cpp:480] Space 1, part 76 has been added, asLearner 0
+I20240325 00:18:26.822319     1 NebulaStore.cpp:480] Space 1, part 77 has been added, asLearner 0
+I20240325 00:18:26.825062     1 NebulaStore.cpp:480] Space 1, part 78 has been added, asLearner 0
+I20240325 00:18:26.827677     1 NebulaStore.cpp:480] Space 1, part 79 has been added, asLearner 0
+I20240325 00:18:26.830423     1 NebulaStore.cpp:480] Space 1, part 80 has been added, asLearner 0
+I20240325 00:18:26.833170     1 NebulaStore.cpp:480] Space 1, part 81 has been added, asLearner 0
+I20240325 00:18:26.835826     1 NebulaStore.cpp:480] Space 1, part 82 has been added, asLearner 0
+I20240325 00:18:26.838479     1 NebulaStore.cpp:480] Space 1, part 83 has been added, asLearner 0
+I20240325 00:18:26.841256     1 NebulaStore.cpp:480] Space 1, part 84 has been added, asLearner 0
+I20240325 00:18:26.844348     1 NebulaStore.cpp:480] Space 1, part 85 has been added, asLearner 0
+I20240325 00:18:26.847247     1 NebulaStore.cpp:480] Space 1, part 86 has been added, asLearner 0
+I20240325 00:18:26.849903     1 NebulaStore.cpp:480] Space 1, part 87 has been added, asLearner 0
+I20240325 00:18:26.852607     1 NebulaStore.cpp:480] Space 1, part 88 has been added, asLearner 0
+I20240325 00:18:26.855422     1 NebulaStore.cpp:480] Space 1, part 89 has been added, asLearner 0
+I20240325 00:18:26.858122     1 NebulaStore.cpp:480] Space 1, part 90 has been added, asLearner 0
+I20240325 00:18:26.860726     1 NebulaStore.cpp:480] Space 1, part 91 has been added, asLearner 0
+I20240325 00:18:26.863360     1 NebulaStore.cpp:480] Space 1, part 92 has been added, asLearner 0
+I20240325 00:18:26.865954     1 NebulaStore.cpp:480] Space 1, part 93 has been added, asLearner 0
+I20240325 00:18:26.868634     1 NebulaStore.cpp:480] Space 1, part 94 has been added, asLearner 0
+I20240325 00:18:26.871140     1 NebulaStore.cpp:480] Space 1, part 95 has been added, asLearner 0
+I20240325 00:18:26.873926     1 NebulaStore.cpp:480] Space 1, part 96 has been added, asLearner 0
+I20240325 00:18:26.876767     1 NebulaStore.cpp:480] Space 1, part 97 has been added, asLearner 0
+I20240325 00:18:26.879529     1 NebulaStore.cpp:480] Space 1, part 98 has been added, asLearner 0
+I20240325 00:18:26.882431     1 NebulaStore.cpp:480] Space 1, part 99 has been added, asLearner 0
+I20240325 00:18:26.885058     1 NebulaStore.cpp:480] Space 1, part 100 has been added, asLearner 0
+I20240325 00:18:26.885514     1 NebulaStore.cpp:75] Register handler...
+I20240325 00:18:26.885958     1 StorageServer.cpp:259] Init LogMonitor
+I20240325 00:18:26.886389     1 StorageServer.cpp:126] Starting Storage HTTP Service
+I20240325 00:18:26.887163     1 StorageServer.cpp:130] Http Thread Pool started
+I20240325 00:18:26.892046   105 WebService.cpp:124] Web service started on HTTP[19779]
+I20240325 00:18:26.895994     1 RocksEngineConfig.cpp:371] Emplace rocksdb option max_bytes_for_level_base=268435456
+I20240325 00:18:26.896522     1 RocksEngineConfig.cpp:371] Emplace rocksdb option max_write_buffer_number=4
+I20240325 00:18:26.897135     1 RocksEngineConfig.cpp:371] Emplace rocksdb option write_buffer_size=67108864
+I20240325 00:18:26.897737     1 RocksEngineConfig.cpp:371] Emplace rocksdb option block_size=8192
+I20240325 00:18:26.929306     1 RocksEngine.cpp:107] open rocksdb on /data/storage/nebula/0/data
+I20240325 00:18:26.930697     1 AdminTaskManager.cpp:22] max concurrent subtasks: 10
+I20240325 00:18:26.931244     1 AdminTaskManager.cpp:40] exit AdminTaskManager::init()
+I20240325 00:18:26.931248   126 AdminTaskManager.cpp:224] waiting for incoming task
+E20240325 00:18:26.965646     1 MemoryUtils.cpp:167] Total memory less than untracked 50 Mib, MemoryTracker limit is not set properly,  Current memory stats:MemoryStats: 8589934592.000GiB/131.998MiB
+I20240325 00:18:26.966914     1 MemoryUtils.cpp:171] MemoryTracker set static ratio: 0.8
+I20240325 00:18:37.136482    75 MetaClient.cpp:3263] Load leader of "storaged0":9779 in 1 space
+I20240325 00:18:37.138911    75 MetaClient.cpp:3269] Load leader ok
+I20240325 00:18:47.175575    75 MetaClient.cpp:3263] Load leader of "storaged0":9779 in 1 space
+I20240325 00:18:47.177865    75 MetaClient.cpp:3269] Load leader ok

@@ -1,7 +1,7 @@
 version: '3.4'
 services:
   metad0:
-    image: docker.io/vesoft/nebula-metad:nightly
+    image: docker.io/vesoft/nebula-metad:v3.6.0
     environment:
       USER: root
     command:
@@ -25,8 +25,8 @@ services:
       - 19559:19559
       - 19560
     volumes:
-      - ./data/meta0:/data/meta
-      - ./logs/meta0:/logs
+      - ./.nebula/data/meta0:/data/meta
+      - ./.nebula/logs/meta0:/logs
     networks:
       - nebula-net
     restart: on-failure
@@ -34,10 +34,10 @@ services:
       - SYS_PTRACE
 
   storaged0:
-    image: docker.io/vesoft/nebula-storaged:nightly
+    image: docker.io/vesoft/nebula-storaged:v3.6.0
     environment:
       USER: root
-      TZ:   "${TZ}"
+      TZ:   "UTC"
     command:
       - --meta_server_addrs=metad0:9559
       - --local_ip=storaged0
@@ -61,8 +61,8 @@ services:
       - 19779:19779
       - 19780
     volumes:
-      - ./data/storage0:/data/storage
-      - ./logs/storage0:/logs
+      - ./.nebula/data/storage0:/data/storage
+      - ./.nebula/logs/storage0:/logs
     networks:
       - nebula-net
     restart: on-failure
@@ -70,10 +70,10 @@ services:
       - SYS_PTRACE
 
   graphd:
-    image: docker.io/vesoft/nebula-graphd:nightly
+    image: docker.io/vesoft/nebula-graphd:v3.6.0
     environment:
       USER: root
-      TZ:   "${TZ}"
+      TZ:   "UTC"
     command:
       - --meta_server_addrs=metad0:9559
       - --port=9669
@@ -96,12 +96,35 @@ services:
       - 19669:19669
       - 19670
     volumes:
-      - ./logs/graph:/logs
+      - ./.nebula/logs/graph:/logs
     networks:
       - nebula-net
     restart: on-failure
     cap_add:
       - SYS_PTRACE
+  
+  console:
+    image: docker.io/vesoft/nebula-console:v3.5
+    entrypoint: ""
+    volumes:
+     # - ./docker/nebula/script.ngql:/tmp/script.ngql
+      - ./docker/nebula/startup.sh:/tmp/startup.sh
+    command: 
+      - sh
+      - /tmp/startup.sh
+    depends_on:
+      - graphd
+    networks:
+      - nebula-net
+
+  studio:
+    image: vesoft/nebula-graph-studio:v3.8.0
+    environment:
+      USER: root
+    ports:
+      - 7001:7001
+    networks:
+      - nebula-net
 
 networks:
   nebula-net:
