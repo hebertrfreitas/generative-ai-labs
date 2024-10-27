@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "aws-bedrock-kb"
+version = "0.1.0"
+description = ""
+authors = ["Hebert Freitas <hebertrfreitas@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+boto3 = "^1.35.49"
+pydantic = "^2.9.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
