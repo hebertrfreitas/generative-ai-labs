@@ -3,38 +3,22 @@
 
 O objetivo principal deste repositorio é organizar os meus estudos sobre generative AI.
 
-Normalmente, eu penso melhor escrevendo textos e códigos de exemplo, então se tornou um hábito criar estes tipos de repositorios por temas que me interessam.
-
 Apesar de ser escrito primariamente para o meu próprio estudo é possível que ele seja útil para mais alguém que esteja interessado no mesmo tema.
 
-Conforme vou liberando novos exemplos e estudando novos temas irei disponibilizar conteúdos 
-
-
-
+Alguns dos temas descritos aqui acompanham posts no meu [blog](https://dev.to/hebertrfreitas/) dedicados ao mesmo.
 
 ----
 
-## Introdução
-
-Podemos afirmar que nos últimos meses o tema Generative AI ganhou a atenção não somente de pessoas ligadas ao setor de tecnologia mas também de quem não tem como fonte de renda principal a atividade de desenvolvimento de software ou relacionadas.
-
-Grande parte desse sucesso repentino se dá pela popularização da ferramenta [chat gpt](https://chat.openai.com/).
-
-Mas o que faz de tão fantastica essa ferramenta é o que existe por debaixo dos panos, os famosos LLMs (Large Language Models).
-
-Existe bastante material introdutório sobre LLM disponível na internet, portanto vou recomendar alguns links que fornece um bom resumo:
-
-1. https://en.wikipedia.org/wiki/Large_language_model
-2. https://roadmap.sh/guides/introduction-to-llms
-
-
-A OpenAI (empresa por traz do chat gpt) disponibiliza uma interface web por onde você pode se cadastrar gratuitamente e conversar com o chat gpt.
-
-Para desenvolvedores, é possível iteragir programaticamente através da [api disponibilizada](https://platform.openai.com/docs/api-reference/)
-
---------
-
 ## Índice
+
+
+1. [Fundamentos de langchain](./examples/langchain_fundamentals/)
+2. [Rodando modelos de LLM localmente com Ollama](./examples/ollama/)
+
+    [Post do blog](https://dev.to/hebertrfreitas/montando-um-ambiente-local-para-testar-llms-opensource-5dgo-temp-slug-1964979/edit)
+
+3. [streamlit](./examples/streamlit-app/)
+4. [vector databases](./examples/vector_databases/)
 
 
 

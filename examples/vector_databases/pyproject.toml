@@ -1,14 +1,18 @@
 [tool.poetry]
-name = "aws-bedrock-kb"
+name = "vector-databases"
 version = "0.1.0"
 description = ""
 authors = ["Hebert Freitas <hebertrfreitas@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
-boto3 = "^1.35.49"
-pydantic = "^2.9.2"
+python = "^3.11"
+ipykernel = "^6.29.5"
+weaviate-client = "^4.14.1"
+langchain-postgres = "^0.0.14"
+langchain-openai = "^0.3.16"
+psycopg = {extras = ["binary", "pool"], version = "^3.2.7"}
+
 
 [build-system]
 requires = ["poetry-core"]
