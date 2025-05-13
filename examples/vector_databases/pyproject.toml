@@ -12,6 +12,10 @@ weaviate-client = "^4.14.1"
 langchain-postgres = "^0.0.14"
 langchain-openai = "^0.3.16"
 psycopg = {extras = ["binary", "pool"], version = "^3.2.7"}
+langchain-ollama = "^0.3.2"
+llama-index-vector-stores-postgres = "^0.5.3"
+llama-index = "^0.12.35"
+llama-index-embeddings-ollama = "^0.6.0"
 
 
 [build-system]
