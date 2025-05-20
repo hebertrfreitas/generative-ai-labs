@@ -19,6 +19,7 @@ Alguns dos temas descritos aqui acompanham posts no meu [blog](https://dev.to/he
 
 3. [streamlit](./examples/streamlit-app/)
 4. [vector databases](./examples/vector_databases/)
+5. [RAG - Retrieval Augmented Generation](./examples/rag/)
 
 
 
