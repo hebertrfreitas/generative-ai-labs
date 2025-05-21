@@ -1,0 +1,25 @@
+services:  
+  
+  postgres:
+    #image: postgres:17.5-bullseye
+    image: pgvector/pgvector:0.8.0-pg17
+    container_name: postgres
+    environment:
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - ./config/init.sql:/docker-entrypoint-initdb.d/init.sql
+      #- ./config/postgresql.conf:/etc/postgresql/postgresql.conf
+      #command: postgres -c config_file=/etc/postgresql/postgresql.conf
+
+  pgadmin:
+    image: dpage/pgadmin4:9.3.0
+    container_name: pgadmin
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=email@email.com
+      - PGADMIN_DEFAULT_PASSWORD=postgres
+    ports:
+      - 8081:80
+    volumes:
+      - ./config/servers.json:/pgadmin4/servers.json
