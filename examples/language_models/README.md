@@ -21,7 +21,7 @@ Um modelo de linguagem é um sistema matemático/estatístico que aprende a atri
 
 ## Como funciona o cálculo de probabilidades
 
-Um
+[Aula UFMG - modelos de linguagem](https://www.youtube.com/watch?v=we-AfvTfxgc&list=PLt2qoMeOJsQyAklWpREY5ivAUe3jrrR21&index=19)
 
 
 #### Referências
