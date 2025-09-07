@@ -12,7 +12,7 @@ Alguns dos temas descritos aqui acompanham posts no meu [blog](https://dev.to/he
 ## Índice
 
 
-1. [Fundamentos de modelos de linguagem e Large Language Models]()
+1. [Fundamentos de modelos de linguagem e Large Language Models](./examples/language_models/)
 1. [Fundamentos de langchain](./examples/langchain_fundamentals/)
 1. Rodando modelos de LLM localmente com Ollama
     * [Código](./examples/ollama/)
