@@ -12,14 +12,15 @@ Alguns dos temas descritos aqui acompanham posts no meu [blog](https://dev.to/he
 ## Índice
 
 
+1. [Fundamentos de modelos de linguagem e Large Language Models]()
 1. [Fundamentos de langchain](./examples/langchain_fundamentals/)
-2. [Rodando modelos de LLM localmente com Ollama](./examples/ollama/)
+1. Rodando modelos de LLM localmente com Ollama
+    * [Código](./examples/ollama/)
+    * [Post do blog](https://dev.to/hebertrfreitas/montando-um-ambiente-local-para-testar-llms-opensource-5dgo-temp-slug-1964979)
 
-    [Post do blog](https://dev.to/hebertrfreitas/montando-um-ambiente-local-para-testar-llms-opensource-5dgo-temp-slug-1964979/edit)
-
-3. [streamlit](./examples/streamlit-app/)
-4. [vector databases](./examples/vector_databases/)
-5. [RAG - Retrieval Augmented Generation](./examples/rag/)
+1. [streamlit](./examples/streamlit-app/)
+1. [vector databases](./examples/vector_databases/)
+1. [RAG - Retrieval Augmented Generation](./examples/rag/)
 
 
 
