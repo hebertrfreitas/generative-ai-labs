@@ -11,7 +11,7 @@ Importante entender a relação entre as disciplinas de artificial inteligence, 
 
 ![Diagrama relação AI, ML, DL, NLP](https://cdn.prod.website-files.com/61b4da477b778c82995e9ccc/6789661af057287616a145e9__NLPatent%20Blog%20(1).png)
 
-
+*Fonte: https://www.nlpatent.com/post/the-ai-terminology-mistakes-everyone-needs-to-stop-making*
 
 
 ## Definição
